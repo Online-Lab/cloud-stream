@@ -23,7 +23,7 @@ angular.module('cloudStream').directive('appCart', function() {
             }
           }
           b = document.createElement('div');
-          b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+          b.style.cssText = s + ' width: ' + a.offsetWidth + 'px;';
           a.insertBefore(b, a.firstChild);
           var l = a.childNodes.length;
           for (var i = 1; i < l; i++) {
@@ -55,6 +55,6 @@ angular.module('cloudStream').directive('appCart', function() {
       })()
 
 		}
-    
+
 	};
 });
