@@ -1,3 +1,13 @@
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
 /* Header styles */
 .header-wrapper{
   background: #fff;
@@ -65,7 +75,7 @@
         -ms-border-radius: 5px;
         border-radius: 5px;
 
-        background: #ff3333;
+        background: @red-color;
         color: #fff;
         display: block;
         margin: -2px 0 0 10px;
@@ -90,12 +100,18 @@
   }
 }
 
+  .under-header{
+    height: 80px;
+    width: 100%;
+  }
+
   /* Product list */
   .product-list-main{
     margin: 0 166px 0 0;
     width: 627px;
   }
-
+    
+    /* Product item */
     .product-item{
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
@@ -104,6 +120,63 @@
 
       background: #fff;
       height: 307px;
+      margin: 0px 0 17px 0;
+      overflow: hidden;
+
+      & > *{
+        float: left;
+      }
+
+      .image-block{
+        display: table;
+        height: 100%;
+        width: 272px;
+
+        div{
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+
+      .desc-block{
+        overflow: hidden;
+        width: 355px;
+
+        .title{
+          border-bottom: 2px solid #f5f4f4;
+          float: left;
+          font-size: 21px;
+          margin: 13px 0 13px 0;
+          padding: 10px 14px;
+        }
+        .desc{
+          clear: left;
+          font-size: 14px;
+          margin: 0 0 0 16px;
+        }
+        .price{
+          color: @red-color;
+          font: 32px rubikbold;
+          letter-spacing: 1px;
+          margin: 37px 0 0 0;
+          padding: 0 0 0 86px;
+        }
+        .buy{
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          border-radius: 5px;
+
+          background: @red-color;
+          color: #fff;
+          display: block;
+          font-size: 18px;
+          margin: 22px 0 0 49px;
+          padding: 8px 0;
+          text-align: center;
+          width: 191px;
+        }
+      }
     }
 
   /* Cart */
