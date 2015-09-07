@@ -10,6 +10,7 @@
 /* Cart */
 .cart-main{
   margin: 0px 0 17px 0;
+  padding: 17px 0 0 0;
   width: 325px;
 
   .title{
@@ -17,10 +18,11 @@
     font-size: 21px;
     margin: 0 16px 6px 0;
   }
+
   .cart-items{
     border-top: 1px solid #d1d0d0;
     border-bottom: 1px solid #d1d0d0;
-    margin: 0 0 58px 0;
+    margin: 0 0 48px 0;
     vertical-align: middle;
     width: 100%;
     
@@ -28,14 +30,28 @@
       width: 112px;
     }
     .count{
+      line-height: 27px;
+      margin: 0;
+      padding: 0;
       text-align: center;
       width: 56px;
-      p{
+      div{
         border-left: 1px solid #d5d5d5;
         border-right: 1px solid #d5d5d5;
-        margin: 3px;
+        height: 100%;
+        margin: 2px 0;
       }
     }
+    .price{
+      padding: 0 0 0 13px;
+      vertical-align: middle;
+    }
+      .delete-btn{
+        display: block;
+        float: right;
+        margin: 0 20px 0 0;
+      }
+
     tr{
       border-bottom: 2px solid #eee;
       height: 46px;
@@ -46,31 +62,33 @@
     td{
       
     }
-
-    .delete-btn{
-      display: block;
-      float: right;
-    }
   }
+
   .cart-total{
+    .total-label{
+      width: 112px;
+    }
 
     .total-price{
       font-size: 18px;
     }
   }
-  .order-btn{
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
 
-    background: @red-color;
-    color: #fff;
-    display: block;
-    float: right;
-    margin: 6px 13px 0 0px;
-    padding: 6px 8px 6px 6px;
-    text-transform: uppercase;
-    text-decoration: none;
+  .order-block{
+
   }
+    .order-btn{
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+
+      background: @red-color;
+      color: #fff;
+      display: block;
+      margin: 16px 13px 0 173px;
+      padding: 6px 8px 6px 6px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
 }

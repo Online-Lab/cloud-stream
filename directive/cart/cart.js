@@ -22,6 +22,7 @@ angular.module('cloudStream').directive('appCart', function() {
               }
           }
           b = document.createElement('div');
+          //b.style.cssText = s + ' overflow: hidden;';
           b.style.cssText = s + ' width: ' + a.offsetWidth + 'px;';
           a.insertBefore(b, a.firstChild);
           var l = a.childNodes.length;

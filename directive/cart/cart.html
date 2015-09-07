@@ -5,8 +5,8 @@
   <table class="cart-items">
     <tr ng-repeat="i in [1,2]">
       <td class="name">Hikvision DS-2CD2412F-IW</td>
-      <td class="count"><p>1</p></td>
-      <td>
+      <td class="count"><div>1</div></td>
+      <td class="price">
         <span>6431 Р</span>
         <a href="#" class="delete-btn"><img src="../../img/delete.png"></a>
       </td>
@@ -15,10 +15,12 @@
 
   <table class="cart-total">
     <tr>
-      <td>Итого:</td>
+      <td class="total-label">Итого:</td>
       <td class="total-price">19293 Р</td>
     </tr>
   </table>
 
-  <p class="order-btn">Оформить заказ</p>
+  <div class="order-block">
+    <a href="#" class="order-btn">Оформить заказ</a>
+  </div>
 </div>
